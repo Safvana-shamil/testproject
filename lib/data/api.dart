@@ -8,7 +8,7 @@ class ApiData {
     var response;
     try {
       response = await http.get(
-          Uri.parse("https://mockend.com/Safvana-shamil/cbqtestproject/posts"));
+          Uri.parse("https://mockend.com/Safvana-shamil/testproject/posts"));
       if (response.statusCode == 200) {
         return Success(
             response: courseModelFromMap(response.body),
